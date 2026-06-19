@@ -4,6 +4,12 @@ import { products } from "./data.js";
 const app = express();
 const PORT = process.env.PORT || 3333;
 
+// Loga todas as requisições que chegam na API.
+app.use((req, res, next) => {
+  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+  next();
+});
+
 // Rota raiz só para indicar que a API está no ar.
 app.get("/", (req, res) => {
   res.json({

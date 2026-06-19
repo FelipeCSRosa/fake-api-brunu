@@ -9,7 +9,7 @@ export const products = [
       desktop: "./assets/images/image-waffle-desktop.jpg",
     },
     id: 1,
-    name: "Waffle with Berries",
+    name: "Waffle with Berries Pelados",
     category: "Waffle",
     price: 6.5,
   },

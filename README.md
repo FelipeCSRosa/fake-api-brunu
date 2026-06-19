@@ -16,8 +16,17 @@ npm install
 npm start
 ```
 
-O servidor sobe em `http://localhost:3000` (ou na porta definida na variável de
+O servidor sobe em `http://localhost:3333` (ou na porta definida na variável de
 ambiente `PORT`).
+
+> Se a porta estiver ocupada, rode em outra:
+>
+> ```bash
+> # PowerShell
+> $env:PORT=4567; npm start
+> # CMD
+> set PORT=4567 && npm start
+> ```
 
 Durante o desenvolvimento, dá pra usar o modo watch (reinicia ao salvar):
 
@@ -36,8 +45,8 @@ npm run dev
 ### Exemplos
 
 ```bash
-curl http://localhost:3000/products
-curl http://localhost:3000/products/1
+curl http://localhost:3333/products
+curl http://localhost:3333/products/1
 ```
 
 ## Estrutura

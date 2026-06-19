@@ -1,0 +1,20 @@
+{
+  "name": "fake-api-brunu",
+  "version": "1.0.0",
+  "description": "API Node simples com uma rota GET que retorna os dados de sobremesas.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "express"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
